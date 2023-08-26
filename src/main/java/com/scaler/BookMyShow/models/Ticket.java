@@ -19,7 +19,7 @@ public class Ticket extends BaseModel {
     private Show show; // Many tickets become part of a single show hence ticket to show is Many to one.
 
     @OneToMany
-    private List<Payment> payments; // one ticket can have multiple payment methods due to partial payment supported.
+    private List<Payment> payments; // one ticket can have multiple payment methods due to partial payment supported.(Thro UPI,Thro Discount Voucher)
 
     @ManyToOne
     private User user; // user can book multiple tickets.

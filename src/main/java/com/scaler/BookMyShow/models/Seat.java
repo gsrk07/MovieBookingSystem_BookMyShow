@@ -11,7 +11,6 @@ import lombok.Setter;
 public class Seat extends BaseModel {
 
     private int rowval;
-
     private int colval;
 
     private String seatNumber;
