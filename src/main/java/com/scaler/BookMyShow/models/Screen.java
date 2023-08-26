@@ -17,6 +17,6 @@ public class Screen extends BaseModel{
     private List<Seat> seats;
 
     @Enumerated(EnumType.ORDINAL)
-    @ElementCollection
+    @ElementCollection // here we are adding ElementCollection annotation since Screen has multiple features and to create a one to many type relation for an ENUM we write element collection
     private List<Feature> features; // note Feature is an ENUM Hence, way of handling ENUM in DB is using the 2 above annotations.
 }
