@@ -10,7 +10,8 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-public class Show extends  BaseModel {
+
+public class MovieShow extends BaseModel {
 
     @ManyToOne // relation between Show to Movie.
     private Movie movie;

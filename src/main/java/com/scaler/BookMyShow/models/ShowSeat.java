@@ -11,7 +11,7 @@ import lombok.Setter;
 public class ShowSeat extends BaseModel{
 
     @ManyToOne
-    private Show show;
+    private MovieShow show;
 
     @Enumerated(EnumType.ORDINAL)
    // @ElementCollection we dont need a collection since for one showseat, there will be only one status.
