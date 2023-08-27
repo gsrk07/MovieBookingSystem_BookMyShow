@@ -11,3 +11,12 @@ spring.jpa.hibernate.ddl-auto=update || create || verify // different kinds of v
 update -> everytime we run the system, only new changes are updated
 create -> everytime we run this system, drop all the tables and then re-create them with current changes
 verify -> verify whether the DB has required tables and columns as per entities
+
+
+For  classes, of whose we create their objects in another class and hence are known as dependent objects,
+we use annotation called as @Component. But if that class whose object is being created in another class is specific in nature
+then we use the annotation @Service or @Repository
+
+
+If we have controllers which support RestAPI's we use the annotation as @RestController.
+If we have normal controllers, we use the annotation as @Controller.
