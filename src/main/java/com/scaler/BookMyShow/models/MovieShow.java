@@ -28,5 +28,5 @@ public class MovieShow extends BaseModel {
 
     @Enumerated(EnumType.ORDINAL)
     @ElementCollection // here we are using element collection since a show can have multiple features
-    private List<Feature> features; // this Feature is an ENUM. Hence the 2 annotations will create a table for Enum and mapping between Show and features.
+    private List<Feature> features; // this Feature is an ENUM. Hence the 2 annotations will create a table for Enum and mapping between MovieShow and features.
 }

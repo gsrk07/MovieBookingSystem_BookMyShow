@@ -1,0 +1,1 @@
+SELECT * FROM bms_aug23.theatre_screens;
