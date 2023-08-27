@@ -12,7 +12,7 @@ public interface TicketRepository extends JpaRepository<Ticket,Long>{
     @Override
     Optional<Ticket> findById(Long TicketId);
 
-    // Optional is used when we may or maynot have a datatype. Optional is used also when we want to avoid null pointer exception.
+    // Optional is used when we may or may not have the datatype which we will get. Optional is used also when we want to avoid null pointer exception.
 
     @Override
     Ticket save(Ticket ticket);

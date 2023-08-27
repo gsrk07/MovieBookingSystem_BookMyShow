@@ -6,9 +6,10 @@ import com.scaler.BookMyShow.exceptions.UserNotFoundException;
 import com.scaler.BookMyShow.models.User;
 import com.scaler.BookMyShow.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
+@Service
 public class UserServiceImpl implements UserService{
 
     // we know that Service interacts with Repository.
