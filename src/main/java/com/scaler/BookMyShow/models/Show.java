@@ -13,13 +13,13 @@ import java.util.List;
 public class Show extends  BaseModel {
 
     @ManyToOne // relation between Show to Movie.
-
     private Movie movie;
 
     private LocalDateTime startTime;
 
     private LocalDateTime endTime;
 
+    @OneToMany
     private List<ShowSeat> showseats;
 
     @ManyToOne
