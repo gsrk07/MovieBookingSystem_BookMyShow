@@ -20,3 +20,7 @@ then we use the annotation @Service or @Repository
 
 If we have controllers which support RestAPI's we use the annotation as @RestController.
 If we have normal controllers, we use the annotation as @Controller.
+
+DTO's are supposed to be used by controller layer only, service and repository layer should not deal with
+DTO's  they should only deal with internal models.
+
